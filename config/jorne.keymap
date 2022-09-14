@@ -21,7 +21,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LALT &kp X>;
+                <&kp C &kp X>;
         };
     };
 
