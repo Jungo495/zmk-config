@@ -21,11 +21,11 @@
             label = "ch_lang";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <1000>;
-            tap-ms = <2000>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&macro_press   &kp LALT>    
-                , <&macro_tap     &kp KP_N4 &kp KP_N6>    
+                , <&macro_tap     &kp X>    
                 , <&macro_release &kp LALT>
                 ;
         };
