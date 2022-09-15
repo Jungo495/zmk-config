@@ -19,20 +19,7 @@
 #&mt { quick_tap_ms = <220>; };
 
 / {
-    macros {
-        ch_lang: ch_lang {
-            compatible = "zmk,behavior-macro";
-            label = "ch_lang";
-            #binding-cells = <0>;
-            wait-ms = <1000>;
-            tap-ms = <2000>;
-            bindings =
-                = <&macro_press   &kp LALT>    
-                , <&macro_tap     &kp KP_N4 &kp KP_N6>    
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
+
 
     keymap {
         compatible = "zmk,keymap";
