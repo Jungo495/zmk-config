@@ -17,8 +17,8 @@
 
 / {
     macros {
-        ch_lang: ch_lang {
-            label = "ch_lang";
+        numdot: numdot {
+            label = "ZM_numdot";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -29,8 +29,22 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        grtsgn: grtsgn {
+            label = "ZM_grtsgn";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>    
+                , <&macro_tap     &kp KP_N6 &kp KP_N2>    
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 };
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
