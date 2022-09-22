@@ -22,22 +22,25 @@
         label = "TAP_DANCE_0";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        bindings =
+          <&lt 1>,
+          <&lt 2>,
+          <&lt 3>;
       };
     };
     macros {
-        ch_lang: ch_lang {
-            label = "ch_lang";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
-            bindings
-                = <&macro_press   &kp LALT>    
-                , <&macro_tap     &kp X>    
-                , <&macro_release &kp LALT>
-                ;
-        };
+      ch_lang: ch_lang {
+        label = "ch_lang";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings
+          = <&macro_press   &kp LALT>    
+          , <&macro_tap     &kp X>    
+          , <&macro_release &kp LALT>
+          ;
+      };
     };
 };
 
