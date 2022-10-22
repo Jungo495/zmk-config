@@ -24,7 +24,7 @@
             <&kp N1>,
             <&kp N2>,
             <&kp N3>;
-        };
+      };
       ch_lang: ch_lang {
         label = "ch_lang";
         compatible = "zmk,behavior-macro";
@@ -38,14 +38,13 @@
             <&kp X>,
             <&macro_release>,
             <&kp LALT>;
-              };
+        };
     };
-};
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-        default_layer {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    \     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
@@ -118,5 +117,5 @@
                                    &trans &trans &trans   &trans &trans &trans
                         >;
                 };
-    };
+        };
 };
