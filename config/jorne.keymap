@@ -15,8 +15,30 @@
 
 / {
     behaviors {
-
-
+      td0: tap_dance_0 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_0";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings =
+            <&kp N1>,
+            <&kp N2>,
+            <&kp N3>;
+        };
+      ch_lang: ch_lang {
+        label = "ch_lang";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings =
+            <&macro_press>,
+            <&kp LALT>,
+            <&macro_tap>,
+            <&kp X>,
+            <&macro_release>,
+            <&kp LALT>;
+      };
     };
 };
 
