@@ -35,12 +35,16 @@
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings
-                = <&macro_press   &kp LALT>    
-                , <&macro_tap     &kp X>    
-                , <&macro_release &kp LALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LALT>;
         };
+
+
 
     };
 };
