@@ -20,13 +20,13 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings =
-                <&kp N1>,
-                <&kp N2>,
-                <&kp N3>;
+            bindings
+              = <&lt 1>
+              , <&lt 2>
+              , <&lt 3>
               ;
          };
-    };
+    
 
         ch_lang: ch_lang {
             label = "ch_lang";
@@ -57,7 +57,7 @@
 
             bindings = <
  &kp LWIN  &kp GRAVE   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y           &kp U      &kp I    &kp O     &kp P       &kp LBKT  &mt RWIN RBKT
-                &td0   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H           &kp J      &kp K    &kp L  &kp SEMI  &mt RCTRL SQT
+                &kp A  &kp A   &kp S      &kp D            &kp F      &kp G      &kp H           &kp J      &kp K    &kp L  &kp SEMI  &mt RCTRL SQT
             &ch_lang   &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp BSLH
                                       &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
             >;
